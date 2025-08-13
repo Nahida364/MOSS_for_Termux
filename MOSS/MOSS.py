@@ -145,7 +145,7 @@ def get_nasa_apod():
     print(f"说明: {data.get('explanation', '无说明')}")
     
     # 创建保存目录
-    save_dir = "//storage/emulated/0/Pictures/NASA"
+    save_dir = "//storage/emulated/0/Download/NASA"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     
