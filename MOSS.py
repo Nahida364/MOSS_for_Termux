@@ -145,7 +145,7 @@ def get_nasa_apod():
     print(f"说明: {data.get('explanation', '无说明')}")
     
     # 创建保存目录
-    save_dir = "每日天文"
+    save_dir = "//storage/emulated/0/Pictures/NASA"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     
@@ -204,9 +204,9 @@ def get_weather(city):
         print("未找到该城市的天气信息")
 
 def main():
-    print("\n作者是小吉祥草王大人哒~QQ号3921536252\n")
+    print("\n作者是小吉祥草王哒~QQ号3921536252\n")
     # 获取API Key
-    api_key = input("输入APIkey：").strip()
+    api_key = input("输入deepseek官方APIkey：").strip()
     
     # 播放欢迎音频
     play_audio("我是载人轨道空间站控制系统.wav")
